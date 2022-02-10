@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #F9F1E7;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.container {
+  padding: 0 100px;
+}
+.slider{
+    position: relative;
+    /* height: 100vh; */
+    margin-top: 150px;
+    margin-left: 150px;
+
+}
+.slider-item {
+    position: relative;
+
+  }
+  
+.bottom-card {
+  position: absolute;
+  /* width: 294px;
+  height: 148px; */
+  padding: 24px 105px 24px 24px;
+  /* left: 0; */
+  /* top: 0; */
+  right: 35%;
+  bottom: 10%;
+
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(31px);
+}
+
+.slick-arrow {
+    position: absolute;
+    top: -10%;
+    right: 30%;
+    transform: translateY(-50%);
+  
+    width: 20px;
+    height: 20px;
+  
+    z-index: 10;
+    font-size: 0;
+    color: transparent;
+  
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+  
+    background: none;
+    outline: none;
+  
+    transition: 0.2s;
+  }
+  
+  .slick-arrow:hover {
+    border-color: #ff6e30;  
+  }
+  
+  .slick-prev {
+    right: 32%;
+    transform: rotate(-45deg);
+  }
+  
+  .slick-next {
+    /* right: 10px; */
+    transform: rotate(135deg);
+  }
+
+  .fixed-card {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(31px);
+    z-index: 1;
+    width: 25%;
+    padding: 60px;
+  }
+  .fixed-title {
+    margin-bottom: 16px;
+  }
+  .fixed-gap {
+    margin-bottom: 48px;
+  }
+  .fixed-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #E89F71;
+    padding: 24px 80px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    /* top: 0; */
+    bottom: 105%;
+    left: 35%;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  ul li button {
+      color: transparent;
+      border-radius: 50%;
+      width: 11px;
+      height: 11px;
+      font-size: 0;
+      border: none;
+      background-color: black;
+      /* border: none; */
+  }
+
+  .slick-active button {
+      background-color: #E89F71;
+      padding: 10px;
+
+  }
+
+  
